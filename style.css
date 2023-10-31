@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 :root {
@@ -53,7 +54,7 @@ input:not([type=text]):hover, button:hover, select:hover {
     border-radius: 5px;
 }
 
-#botPagar, #botVolver {
+.boton {
     padding: 25px;
     background-color: darkblue;
     color: skyblue;
@@ -72,6 +73,7 @@ input:not([type=text]):hover, button:hover, select:hover {
     font-size: 30px;
     font-weight: bold;
     width: max-content;
+    margin-bottom: 25px;
 }
 
 /* ··················· FIN CÓDIGO DE LOS EJERCICIOS ······················ */
