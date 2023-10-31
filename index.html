@@ -9,8 +9,77 @@
 	</head>
 
   	<body>
+        <form action="#" method="post" target="_blank" name="formulario" id="formulario">
+            <fieldset form="formulario" name="entradas" id="entradas">
+                <legend>Entradas</legend>
 
+                <label for="numEnt">Número de entradas: </label>
+                <select id="numEnt" name="numEnt">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select><br><br>
 
-        
+                <label for="categoria">Categoría: </label><br><br>
+                <select id="categoria" name="categoria">
+                    <option value="pistaGen">Pista General</option>
+                    <option value="pista2">Pista 2</option>
+                    <option value="pista3">Pista 3</option>
+                </select><br>
+
+            </fieldset>
+
+            <fieldset form="formulario" name="datos" id="datos">
+                <legend>Datos del comprador</legend>
+
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" id="nombre"></input><br><br>
+
+                <label for="apellidos">Apellidos: </label>
+                <input type="text" name="apellidos" id="apellidos"></input><br><br>
+
+                <label for="email">E-Mail: </label>
+                <input type="text" name="email" id="email"></input><br><br>
+
+                <label for="fechaNac">Fecha de nacimiento: </label>
+                <input type="date" name="fechaNac" id="fechaNac"></input><br><br>
+                
+            </fieldset>
+
+            <fieldset form="formulario" name="pago" id="pago">
+                <legend>Pago</legend>
+                <p>Selecciona método de pago:</p><br>
+           
+               
+                <div>
+                    <input type="radio" name="metPago" id="visa" value="visa">
+                    <label for="metPago"><img class="logo" src="/images/visa.png"></label><br>
+                </div>
+
+                <div>
+                    <input type="radio" name="metPago" id="mastercard" value="mastercard">
+                    <label for="metPago"><img class="logo" src="/images/mastercard.png"></label><br>
+                </div>
+
+                <div>
+                    <input type="radio" name="metPago" id="paypal" value="paypal">
+                    <label for="metPago"><img class="logo" src="/images/paypal.png"></label><br>
+                </div>
+
+                <div>
+                    <input type="radio" name="metPago" id="bizum" value="bizum">
+                    <label for="metPago"><img class="logo" src="/images/bizum.png"></label>
+                </div><br>
+
+                <input type="checkbox" name="condiciones" id="condiciones">
+                <label for="condiciones">Acepto las condiciones de compra</label><br><br>
+
+                <button type="button" id="botPagar">Proceder al pago</button>
+                
+            </fieldset>
+        </form>
+
     </body>
 </html>

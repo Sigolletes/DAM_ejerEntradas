@@ -5,26 +5,55 @@
 }
 
 :root {
-    --color1: rgb(74, 4, 47);
-    --color2: rgb(171, 62, 129);
-    --color3: rgb(223, 157, 198);
-    --color4: rgb(45, 102, 89);
+    --color1: rgb(27, 85, 73);
+    --color2: rgb(71, 147, 131);
+    --color3: rgb(129, 198, 183);
+    --color4: rgb(197, 243, 233);
 }
 
 body {
-    display: grid;
-	grid-template-rows: auto;
-	width: auto;
-	height: 100vh;
-	justify-items: center;
-	align-items: center;
     background-color: var(--color4);
-    margin: 10px;
+    font-family: 'Calibri', sans-serif;
+    padding: 4vmin;
+}
+
+#formulario fieldset {
+    padding: 3vmin;
+    gap: 1vmin;
+    border: 3px double var(--color2);
+}
+
+#formulario fieldset:not(:last-child) {
+    margin-bottom: 3vmin;
+}
+
+#pago div {
+    display: flex;
+    align-items: center;
+    gap: 2vmin;
 }
 
 /* ···················· CÓDIGO DE LOS EJERCICIOS ························· */
 
+#formulario legend {
+    font-family: Verdana, sans-serif;
+}
 
+.logo {
+    width: 50px;
+    height: 40px;
+    object-fit: contain;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#botPagar {
+    padding: 25px;
+    background-color: darkblue;
+    color: skyblue;
+    font-size: 2em;
+}
 
 
 /* ··················· FIN CÓDIGO DE LOS EJERCICIOS ······················ */
