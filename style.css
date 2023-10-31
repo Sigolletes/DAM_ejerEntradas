@@ -33,6 +33,10 @@ body {
     gap: 2vmin;
 }
 
+input:not([type=text]):hover, button:hover, select:hover {
+    cursor: pointer;
+}
+
 /* ···················· CÓDIGO DE LOS EJERCICIOS ························· */
 
 #formulario legend {
@@ -48,13 +52,26 @@ body {
     border-radius: 5px;
 }
 
-#botPagar {
+#botPagar, #botVolver {
     padding: 25px;
     background-color: darkblue;
     color: skyblue;
     font-size: 2em;
 }
 
+#botVolver {
+    font-family: Impact, sans-serif;
+    font-weight: bold;
+}
+
+#title {
+    color: white;
+    background-color: rgb(103, 93, 158);
+    padding: 8px;
+    font-size: 30px;
+    font-weight: bold;
+    width: max-content;
+}
 
 /* ··················· FIN CÓDIGO DE LOS EJERCICIOS ······················ */
 
