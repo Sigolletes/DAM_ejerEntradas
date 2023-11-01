@@ -1,3 +1,4 @@
+/* Estilos aplicados a todo el documento */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,7 @@
     text-decoration: none;
 }
 
+/* Variables para usar en cualquier parte del documento */
 :root {
     --color1: rgb(27, 85, 73);
     --color2: rgb(71, 147, 131);
@@ -12,12 +14,14 @@
     --color4: rgb(197, 243, 233);
 }
 
+/* Estilos aplicados a la estructura de base del documento */
 body {
     background-color: var(--color4);
     font-family: 'Calibri', sans-serif;
     padding: 4vmin;
 }
 
+/* Estilos aplicados al formulario y al cursor al pasar por encima de algunos tipos de inputs */
 #formulario fieldset {
     padding: 3vmin;
     gap: 1vmin;
@@ -39,11 +43,12 @@ input:not([type=text]):hover, button:hover, select:hover {
 }
 
 /* ···················· CÓDIGO DE LOS EJERCICIOS ························· */
-
+/* Estilo aplicado a los descendientes del tipo legend del elemento con el id formulario */
 #formulario legend {
     font-family: Verdana, sans-serif;
 }
 
+/* Clases usadas en varios elementos */
 .logo {
     width: 50px;
     height: 35px;
@@ -61,6 +66,7 @@ input:not([type=text]):hover, button:hover, select:hover {
     font-size: 2em;
 }
 
+/* Identificadores usados en un solo elemento cada uno */
 #botVolver {
     font-family: Impact, sans-serif;
     font-weight: bold;
